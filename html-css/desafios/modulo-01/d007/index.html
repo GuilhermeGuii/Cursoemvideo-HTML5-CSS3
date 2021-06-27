@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a Imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar melhor a experiência &#x1F92F;. (<em>Imagem até a resolução</em> <strong>4K</strong>)</p>
+
+    <picture>
+        <source media="(max-width: 680px)" srcset="imagens/paisagem-pp.jpg" type="image/jpg">
+        <source media="(max-width: 1280px)" srcset="imagens/paisagem-p.jpg" type="image/jpg">
+        <source media="(max-width: 1680px)" srcset="imagens/paisagem-m.jpg" type="image/jpg">
+        <source media="(max-width: 1920px)" srcset="imagens/paisagem-g.jpg" type="image/jpg">
+        <img src="imagens/paisagem-4k.jpg" alt="Imagem Flexível">
+    </picture>
+
+    <p>Foto de <a href="https://www.pexels.com/pt-br/@lastly?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Tyler Lastovich</a> no <a href="https://www.pexels.com/pt-br/foto/arvores-de-folhas-verdes-572688/?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Pexels</a></p>
+
+</body>
+</html>
