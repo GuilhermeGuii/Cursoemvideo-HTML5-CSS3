@@ -50,7 +50,6 @@ header {
 header > h1 {
     color: white;
     font-family: var(--fonte-destaque);
-    font-weight: normal;
 }
 
 header > p {
@@ -62,7 +61,15 @@ nav {
 }
 
 main {
+    min-width: 250px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
     background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1 {
@@ -72,6 +79,16 @@ main h1 {
 
 main h2 {
     font-family: var(--fonte-android);
+}
+
+main img {
+    width: 100%;
+}
+
+main .pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
 }
 
 footer {
