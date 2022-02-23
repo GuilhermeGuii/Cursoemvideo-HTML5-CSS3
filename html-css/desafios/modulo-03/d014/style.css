@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead tr > th {
+  background-color: #7c7d7c;
+  color: white;
+}
+
+tbody tr:nth-child(5),
+tbody tr:nth-child(8) {
+  background-color: #7c7d7c;
+  color: white;
+  text-align: left;
+}
+
+tbody td {
+  text-align: center;
+}
+
+tbody td:nth-of-type(1) {
+  text-align: left;
+}
+
+th,
+td {
+  border: solid 1px black;
+  padding: 10px;
+}
