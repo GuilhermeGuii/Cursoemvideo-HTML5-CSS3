@@ -64,7 +64,7 @@ section a:hover {
 }
 
 section#exercicios {
-    background: #1E1F1C url("https://i.imgur.com/CZNEIGx.png") no-repeat center left;
+    background: #1E1F1C url(https://i.imgur.com/CZNEIGx.png) no-repeat center left;
     background-size: cover;
 }
 
