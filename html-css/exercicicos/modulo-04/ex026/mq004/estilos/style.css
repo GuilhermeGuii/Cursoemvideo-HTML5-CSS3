@@ -1,6 +1,6 @@
 @charset "UTF-8"; 
 
-/* Versão Mobile First */
+/* Versão Mobile First -- TELAS PEQUENAS E CELULAR */
 
 * {
 margin: 0;
@@ -21,7 +21,8 @@ body {
 
 main {
     background-color: rgba(255, 255, 255, 0.842);
-    width: 90vw;
+    max-width: 400px;
+    width: 80vw;
     margin: auto;
     border-radius: 10px;
     margin-top: 20px;
