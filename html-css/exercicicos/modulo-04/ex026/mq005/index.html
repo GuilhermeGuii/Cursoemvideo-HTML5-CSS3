@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-icons burguer" onclick="clickMenu()">menu</span>
@@ -25,21 +27,41 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum id consequuntur, alias saepe impedit possimus repudiandae quaerat delectus reprehenderit! Delectus dicta libero ipsum exercitationem a voluptatem ut, consequatur molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium magni repudiandae deleniti consequuntur sint fugit inventore eos illum? Deleniti eligendi enim, ullam doloribus maiores atque iste quos delectus? Rerum!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti unde aliquid. Voluptates iusto, officia eveniet odio obcaecati minima excepturi molestiae nam modi error libero sed, vitae nostrum impedit autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, aliquid sapiente, labore aspernatur nisi magnam nam eligendi optio velit tempora quidem harum voluptates? Sit delectus eius nesciunt tempora ex velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eaque delectus debitis soluta culpa vero quibusdam placeat nam aut assumenda nihil laboriosam deleniti, totam tenetur mollitia voluptatum consectetur hic at.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis tempora sunt in expedita! Labore sunt cumque minima modi, earum laboriosam impedit possimus voluptas nihil necessitatibus quo! Repellat, debitis optio!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsum id consequuntur, alias saepe
+                impedit possimus repudiandae quaerat delectus reprehenderit! Delectus dicta libero ipsum exercitationem
+                a voluptatem ut, consequatur molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+                praesentium magni repudiandae deleniti consequuntur sint fugit inventore eos illum? Deleniti eligendi
+                enim, ullam doloribus maiores atque iste quos delectus? Rerum!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci corrupti unde aliquid. Voluptates
+                iusto, officia eveniet odio obcaecati minima excepturi molestiae nam modi error libero sed, vitae
+                nostrum impedit autem. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, aliquid sapiente,
+                labore aspernatur nisi magnam nam eligendi optio velit tempora quidem harum voluptates? Sit delectus
+                eius nesciunt tempora ex velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eaque
+                delectus debitis soluta culpa vero quibusdam placeat nam aut assumenda nihil laboriosam deleniti, totam
+                tenetur mollitia voluptatum consectetur hic at.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni corporis tempora sunt in expedita! Labore
+                sunt cumque minima modi, earum laboriosam impedit possimus voluptas nihil necessitatibus quo! Repellat,
+                debitis optio!</p>
         </article>
     </main>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
         function clickMenu() {
             if (menu.style.display == 'block') {
-                menu.style.display = 'none'
+                menu.style.display = 'none';
 
             } else {
-                menu.style.display = 'block'
+                menu.style.display = 'block';
             }
         }
     </script>
 </body>
+
 </html>
